@@ -1,0 +1,65 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="reidc.xyz.smartpass.Screens.UserScreen">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Passes"
+        android:id="@+id/userButtonPasses"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/userUserIDText"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userImage"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/profile"
+        android:maxWidth="10dp"
+        android:maxHeight="10dp"
+        android:minHeight="10dp"
+        android:minWidth="10dp"
+        android:layout_alignParentTop="true"
+        android:nestedScrollingEnabled="false"
+        android:background="#ffffff"
+        android:longClickable="false"
+        android:scaleType="centerCrop"
+        android:scrollIndicators="none"
+        android:layout_alignStart="@+id/userQRCode"
+        android:layout_alignEnd="@+id/userQRCode" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="User ID"
+        android:id="@+id/userUserIDText"
+        android:layout_below="@+id/userImage"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userQRCode"
+        android:maxHeight="200dp"
+        android:minHeight="200dp"
+        android:minWidth="200dp"
+        android:maxWidth="200dp"
+        android:layout_below="@+id/userIssuePass"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Issue Pass"
+        android:id="@+id/userIssuePass"
+        android:layout_below="@+id/userButtonPasses"
+        android:layout_alignEnd="@+id/userButtonPasses"
+        android:layout_alignStart="@+id/userButtonPasses" />
+
+</RelativeLayout>

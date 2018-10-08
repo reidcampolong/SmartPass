@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/textItem"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:text="Test Message"
+    android:padding="15dp"
+    android:textIsSelectable="false"
+    android:textSize="20dp"
+    android:singleLine="true"
+    android:scrollIndicators="right" />

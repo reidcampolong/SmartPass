@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="reidc.xyz.smartpass.Screens.ProfileScreen">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Passes"
+        android:id="@+id/profileButtonPasses"
+        android:layout_gravity="center_vertical"
+        android:layout_below="@+id/userIDText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="61dp" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/userImage"
+        android:layout_marginTop="32dp"
+        android:src="@drawable/profile"
+        android:maxWidth="10dp"
+        android:maxHeight="10dp"
+        android:minHeight="10dp"
+        android:minWidth="10dp"
+        android:layout_alignParentTop="true"
+        android:nestedScrollingEnabled="false"
+        android:background="#ffffff"
+        android:longClickable="false"
+        android:scaleType="centerCrop"
+        android:scrollIndicators="none"
+        android:layout_alignStart="@+id/profileQRCode"
+        android:layout_alignEnd="@+id/profileQRCode" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="User ID"
+        android:id="@+id/userIDText"
+        android:layout_below="@+id/userImage"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/profileQRCode"
+        android:maxHeight="200dp"
+        android:minHeight="200dp"
+        android:minWidth="200dp"
+        android:maxWidth="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/profileButtonPasses" />
+
+</RelativeLayout>
